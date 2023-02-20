@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.scss';
+import {Login} from "./components/Login/Login";
 
 const App: React.FC = () =>{
 	return (
 		<div className="App">
-			h
+			<Login/>
 		</div>
 	);
 }
