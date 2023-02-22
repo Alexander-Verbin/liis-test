@@ -3,14 +3,34 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+
+
+//api
+//state
+
+//const hotels = state.hotels selector
+
+//hotels?map{}:<p>Loading</p>
+
+
+
+//value form
+//axios api = value
+
+//setHotels dispatch
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+	</BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
