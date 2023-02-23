@@ -3,3 +3,13 @@
   width: 100vw;
   height: 100vh;
 }
+
+.content{
+  max-width: 1048px;
+  margin: 0 auto;
+  display: flex;
+
+  &__left{
+    flex: 0 0 360px;
+  }
+}
