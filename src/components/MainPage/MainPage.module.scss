@@ -8,8 +8,13 @@
   max-width: 1048px;
   margin: 0 auto;
   display: flex;
+  gap: 24px;
 
   &__left{
     flex: 0 0 360px;
+  }
+
+  &__right{
+    flex: 0 0 664px;
   }
 }

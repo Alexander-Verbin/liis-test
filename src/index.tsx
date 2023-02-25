@@ -7,21 +7,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 
-
-//api
-//state
-
-//const hotels = state.hotels selector
-
-//hotels?map{}:<p>Loading</p>
-
-
-
-//value form
-//axios api = value
-
-//setHotels dispatch
-
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
