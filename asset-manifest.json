@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/liis-test/static/css/main.5bd6f571.css",
-    "main.js": "/liis-test/static/js/main.aa20c719.js",
+    "main.js": "/liis-test/static/js/main.154fd9de.js",
     "static/js/787.e12bc8dd.chunk.js": "/liis-test/static/js/787.e12bc8dd.chunk.js",
     "static/media/back.png": "/liis-test/static/media/back.c9cb6975485ed8a3d339.png",
     "static/media/content1.png": "/liis-test/static/media/content1.cbbfb162d64352eed7f6.png",
@@ -14,11 +14,11 @@
     "static/media/logout.svg": "/liis-test/static/media/logout.f3b378884f4fa107587d6e29f63bf408.svg",
     "static/media/breadcrumb.svg": "/liis-test/static/media/breadcrumb.81d64087ae2a57654186925d14ddb224.svg",
     "main.5bd6f571.css.map": "/liis-test/static/css/main.5bd6f571.css.map",
-    "main.aa20c719.js.map": "/liis-test/static/js/main.aa20c719.js.map",
+    "main.154fd9de.js.map": "/liis-test/static/js/main.154fd9de.js.map",
     "787.e12bc8dd.chunk.js.map": "/liis-test/static/js/787.e12bc8dd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5bd6f571.css",
-    "static/js/main.aa20c719.js"
+    "static/js/main.154fd9de.js"
   ]
 }
