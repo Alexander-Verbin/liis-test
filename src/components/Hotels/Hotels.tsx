@@ -4,15 +4,15 @@ import {Hotel} from "./Hotel/Hotel";
 import {useSelector} from "react-redux";
 import {getFilterCheckIn} from "../../store/filter/filterSlice";
 import {Preloader} from "../../common/Preloader/Preloader";
-import {getHotelData} from "../../store/hotel/hotelSlice";
+import {getHotels} from "../../store/hotels/hotelsSlice";
 export const Hotels = () => {
 	const date = useSelector(getFilterCheckIn)
-	const Hotels = useSelector(getHotelData)
-	//const HotelItem = hotels.map(hotel => <Hotel/>)
+	const Hotels = useSelector(getHotels)
+	const HotelItem = Hotels.map(hotel => <Hotel key={hotel.hotelId}/>)
   return(
 		<div className={style.hotels}>
 			{date
-				? <Hotel/>
+				? HotelItem
 				: <Preloader/>
 			}
 		</div>

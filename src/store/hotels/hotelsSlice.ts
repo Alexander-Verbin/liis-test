@@ -15,13 +15,13 @@ export const hotelsSlice = createSlice({
 	name:'hotels',
 	initialState,
 	reducers:{
-		setFilterData: (state,action:PayloadAction<initialStateType>) => {
+		setHotels: (state,action:PayloadAction<initialStateType>) => {
 			state.hotels = action.payload.hotels;
 		},
 	}
 })
 
-//export const {setHotels} = hotelsSlice.actions;
+export const {setHotels} = hotelsSlice.actions;
 
 
 export const getHotels = (state:RootState) => state.hotels.hotels;
