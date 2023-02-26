@@ -3,7 +3,6 @@ import style from "./Hotels.module.scss"
 import {Hotel} from "./Hotel/Hotel";
 import {useSelector} from "react-redux";
 import {getFilterCheckIn} from "../../store/filter/filterSlice";
-import {Preloader} from "../../common/Preloader/Preloader";
 import {getHotels} from "../../store/hotels/hotelsSlice";
 export const Hotels = () => {
 	const date = useSelector(getFilterCheckIn)
@@ -13,7 +12,7 @@ export const Hotels = () => {
 		<div className={style.hotels}>
 			{date
 				? HotelItem
-				: <Preloader/>
+				: <p>Ничего не найденно</p>
 			}
 		</div>
 	)

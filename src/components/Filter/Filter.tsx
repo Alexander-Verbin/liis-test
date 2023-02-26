@@ -19,7 +19,6 @@ export const Filter: React.FC = () => {
 	const dateFormat = 'DD.MM.YYYY'
 	const setInitialDays = useSelector(getFilterDays)
 	const dispatch = useDispatch()
-	const hotels:Array<initialStateHotelsType> = []
 	const Search = async (values: FormValuesType) => {
 		const cityName = String(values.location)
 		const checkIn = String(values.date.get('year') + "-" + (values.date.get('month') > 10 ? values.date.get('month') : "0" + values.date.get('month')) + "-" + (values.date.get('date') > 10 ? values.date.get('date') : "0" + values.date.get('date')))
@@ -28,17 +27,13 @@ export const Filter: React.FC = () => {
 		const checkOut = String(checkOutDate.get('year') + "-" + String(checkOutDate.get('month') > 10 ? checkOutDate.get('month') : "0" + checkOutDate.get('month')) + "-" + String(checkOutDate.get('date') > 10 ? checkOutDate.get('date') : "0" + checkOutDate.get('date')))
 		dispatch(setFilterData({cityName, checkIn, checkOut,days}))
 		await fetchHotels(cityName, checkIn, checkOut).then(data => {
-			const payload = data.data
-			for(let i = 0; i < payload.length; i++) {
-				const hotelData:initialStateHotelsType = {
-					hotelName: payload[i].hotelName,
-					hotelId: payload[i].hotelId,
-					stars: payload[i].stars,
-					priceFrom: payload[i].priceFrom
-				}
-				dispatch(setHotelData(hotelData))
-				hotels.push(hotelData)
-			}
+			const hotels = data.data.map(({ hotelName, hotelId, stars, priceFrom }:initialStateHotelsType) => ({
+					hotelName,
+					hotelId,
+					stars,
+					priceFrom,
+			}))
+			hotels.forEach((item: initialStateHotelsType) => dispatch(setHotelData(item)))
 			dispatch(setHotels({hotels}))
 		})
 	}

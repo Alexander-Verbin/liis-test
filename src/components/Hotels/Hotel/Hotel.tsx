@@ -10,6 +10,7 @@ export const Hotel: React.FC = () => {
 	const data = useSelector(getHotelData)
 	const date = useSelector(getFilterCheckIn)
 	const days = useSelector(getFilterDays)
+	console.log(data)
 	return (
 		<div className={style.wrapper}>
 			<div className={style.right}>
