@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/liis-test/static/css/main.5bd6f571.css",
+    "main.js": "/liis-test/static/js/main.aa20c719.js",
+    "static/js/787.e12bc8dd.chunk.js": "/liis-test/static/js/787.e12bc8dd.chunk.js",
+    "static/media/back.png": "/liis-test/static/media/back.c9cb6975485ed8a3d339.png",
+    "static/media/content1.png": "/liis-test/static/media/content1.cbbfb162d64352eed7f6.png",
+    "static/media/content3.png": "/liis-test/static/media/content3.c462d1e2f1803e3da0ce.png",
+    "static/media/content2.png": "/liis-test/static/media/content2.8cb3602bf914069d0e50.png",
+    "static/media/icon.svg": "/liis-test/static/media/icon.87ff76dd06942c3a57664afb5827514b.svg",
+    "static/media/addfav.svg": "/liis-test/static/media/addfav.8ece614b3a2ad1f262d014bb7f184a28.svg",
+    "static/media/delFav.svg": "/liis-test/static/media/delFav.9eeeed1414023ae91e0f73832a97cfca.svg",
+    "index.html": "/liis-test/index.html",
+    "static/media/logout.svg": "/liis-test/static/media/logout.f3b378884f4fa107587d6e29f63bf408.svg",
+    "static/media/breadcrumb.svg": "/liis-test/static/media/breadcrumb.81d64087ae2a57654186925d14ddb224.svg",
+    "main.5bd6f571.css.map": "/liis-test/static/css/main.5bd6f571.css.map",
+    "main.aa20c719.js.map": "/liis-test/static/js/main.aa20c719.js.map",
+    "787.e12bc8dd.chunk.js.map": "/liis-test/static/js/787.e12bc8dd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5bd6f571.css",
+    "static/js/main.aa20c719.js"
+  ]
+}
