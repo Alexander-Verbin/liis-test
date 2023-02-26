@@ -1,10 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit"
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { RootState } from "../store";
-import {initialStateHotelsType} from "../hotel/hotelSlice";
 
+export type initialStateHotelsType = {
+	hotelId: null | number
+	hotelName: null | string
+	stars: null | number
+	priceFrom:  number
+}
 type initialStateType = {
- hotels: Array<initialStateHotelsType>
+ hotels: initialStateHotelsType[]
 }
 
 const initialState:initialStateType = {
@@ -15,8 +20,8 @@ export const hotelsSlice = createSlice({
 	name:'hotels',
 	initialState,
 	reducers:{
-		setHotels: (state,action:PayloadAction<initialStateType>) => {
-			state.hotels = action.payload.hotels;
+		setHotels: (state,action:PayloadAction<initialStateHotelsType[]>) => {
+			state.hotels = action.payload;
 		},
 	}
 })

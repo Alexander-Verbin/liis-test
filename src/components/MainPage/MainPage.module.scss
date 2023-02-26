@@ -1,7 +1,7 @@
 .wrapper{
   background: #E5E5E5;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .content{
@@ -12,6 +12,9 @@
 
   &__left{
     flex: 0 0 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 
   &__right{

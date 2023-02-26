@@ -66,7 +66,7 @@ export const Login: React.FC = () => {
 									 }}>
 							<Form.Item>
 								<div className={'btn'}>
-									<Button block htmlType="submit">Войти</Button>
+									<Button type={'text'} block htmlType="submit">Войти</Button>
 								</div>
 							</Form.Item>
 						</Space>

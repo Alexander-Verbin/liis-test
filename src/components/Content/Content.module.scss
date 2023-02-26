@@ -20,6 +20,10 @@
   align-items: center;
   gap: 20px;
 
+  & > img{
+    max-height: 18px;
+  }
+
   &__text{
     font-weight: 500;
     font-size: 32px;
@@ -59,6 +63,21 @@
 
   &__hotels{
     margin-top: 28px;
+    overflow: auto;
+    height: 522px;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
+    &::-webkit-scrollbar-track {
+      background: #E7E7E7;
+      border-radius: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #41522E;
+      border-radius: 2px;
+    }
   }
 }
 

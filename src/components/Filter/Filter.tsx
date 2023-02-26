@@ -5,8 +5,7 @@ import dayjs from 'dayjs'
 import {useDispatch, useSelector} from "react-redux";
 import {getFilterCityName, getFilterDays, setFilterData} from "../../store/filter/filterSlice";
 import {fetchHotels} from "../../api/api";
-import {initialStateHotelsType, setHotelData} from "../../store/hotel/hotelSlice";
-import {setHotels} from "../../store/hotels/hotelsSlice";
+import {initialStateHotelsType, setHotels} from "../../store/hotels/hotelsSlice";
 
 export type FormValuesType = {
 	location: string
@@ -33,8 +32,7 @@ export const Filter: React.FC = () => {
 					stars,
 					priceFrom,
 			}))
-			hotels.forEach((item: initialStateHotelsType) => dispatch(setHotelData(item)))
-			dispatch(setHotels({hotels}))
+			dispatch(setHotels(hotels))
 		})
 	}
 	return (
@@ -86,7 +84,7 @@ export const Filter: React.FC = () => {
 							 }}>
 					<Form.Item>
 						<div className={'btn'}>
-							<Button block htmlType="submit">Найти</Button>
+							<Button type={'text'} block htmlType="submit">Найти</Button>
 						</div>
 					</Form.Item>
 				</Space>
